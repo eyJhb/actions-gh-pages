@@ -63,7 +63,7 @@ Watch https://github.com/peaceiris/actions-gh-pages/issues/87
   core.exportVariable('SSH_AUTH_SOCK', '/tmp/ssh-auth.sock');
   await exec.exec('ssh-add', [idRSA]);
 
-  return `git@${getServerUrl().host}:${publishRepo}.git`;
+  return `git@${getServerUrl().host}:222/${publishRepo}.git`;
 }
 
 export function setGithubToken(
